@@ -15,7 +15,6 @@ namespace ILCyclomicComplextityCalculator
                 var assemblyResult = new AssemblyResult { AssemblyName = Path.GetFileName(assemblyPath) };
 
                 var assemblyDefinition = AssemblyDefinition.ReadAssembly(assemblyPath);
-                assemblyDefinition.MainModule.ReadSymbols();
 
                 var allTypes = GetAllTypes(assemblyDefinition);
 

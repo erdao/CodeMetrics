@@ -58,7 +58,7 @@ namespace ILCyclomicComplextityCalculator
                         ResultView.Items.Add(treeViewItem);
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     MessageBox.Show("Error");
                 }
